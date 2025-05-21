@@ -1,7 +1,14 @@
-const Home = () => {
-    return (
-        <div>This is going to be the home page.</div>
-    )
-}
+import WindowCard from '../components/general/WindowCard';
 
-export default Home
+const Home = () => {
+  return (
+    <div>
+      <div>This is going to be the home page.</div>
+      <WindowCard title='Hello World'>
+        <h1>This is Card Content</h1>
+      </WindowCard>
+    </div>
+  );
+};
+
+export default Home;

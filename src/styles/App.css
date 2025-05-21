@@ -64,3 +64,78 @@
 .member-card a:hover {
   text-decoration: underline;
 }
+
+.window-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #e1e1e1;
+}
+
+.window-header {
+  background: #f6f6f6;
+  padding: 16px;      /* Increased from 12px */
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;          /* Increased from 6px */
+}
+
+.window-button {
+  width: 16px;  /* Increased from 12px */
+  height: 16px; /* Increased from 12px */
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.window-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 8px;    /* Increased from 6px */
+  height: 8px;   /* Increased from 6px */
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  transition: transform 150ms ease;
+}
+
+.window-button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close {
+  background: #ff5f56;
+}
+
+.minimize {
+  background: #ffbd2e;
+}
+
+.expand {
+  background: #27c93f;
+}
+
+.window-title {
+  margin-left: 12px;  /* Increased from 8px */
+  font-size: 16px;    /* Increased from 13px */
+  color: #4a4a4a;
+  font-weight: 600;   /* Increased from 500 */
+}
+
+.window-content {
+  padding: 20px;
+  background: #ffffff;
+}
+
