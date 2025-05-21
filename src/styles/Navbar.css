@@ -1,0 +1,125 @@
+nav {
+  background-color: #f8f8f8;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center all icons and logo horizontally */
+}
+
+.logo {
+  height: 4em;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.nav-link.active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Nav Icon */
+.nav-icon {
+  margin-right: 0.5em;
+  font-size: 1.15em;
+  vertical-align: middle;
+  display: inline-block;
+  background: #fff3e0;
+  border-radius: 50%;
+  padding: 0.4em;
+  border: 2px solid #ff9800;
+  box-shadow: 0 1px 4px rgba(255, 152, 0, 0.1);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover .nav-icon {
+  background: #ff9800;
+  color: #fff;
+  border-color: #ff6600;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  position: absolute;
+  left: 2rem;
+  transform: translateY(-50%);
+  z-index: 1001;
+  cursor: pointer;
+  top: 1rem 0;
+}
+
+@media (min-width: 1081px) {
+  .logo {
+    position: absolute;
+    top: 0.5rem;
+  }
+}
+
+@media (max-width: 1230px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .logo {
+    margin: 0 auto;
+    display: block;
+    position: static;
+    height: 3em;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f8f8f8;
+    padding: 1.5rem 0;
+    z-index: 1000;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .navbar-container {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .nav-link {
+    margin: 1rem 0 0 2rem;
+    font-size: 1.1em;
+    width: 100%;
+    text-align: left;
+  }
+}
