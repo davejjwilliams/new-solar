@@ -52,7 +52,7 @@ const Navbar = () => {
           </a>
           <a href='/members' className='nav-link'>
             <FaUsers className='nav-icon' />
-            Team
+            People
           </a>
           <a href='/funding' className='nav-link'>
             <FaHandHoldingUsd className='nav-icon' />

@@ -4,10 +4,6 @@ import Home from './pages/Home'
 import Members from './pages/Members'
 import './styles/App.css'
 
-function About() {
-  return <h1>About Page</h1>
-}
-
 function App() {
 
   return (
@@ -16,7 +12,6 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/members" element={<Members />} />
         </Routes>
       </div>
