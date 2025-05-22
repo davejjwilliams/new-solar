@@ -1,0 +1,92 @@
+.filterable-table-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filterable-table-search-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filterable-table-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filterable-table-search-results {
+  font-size: 1rem;
+  color: #555;
+  background: #f3f4f6;
+  border-radius: 4px;
+  padding: 0.25em 0.75em;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.filterable-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.filterable-table th,
+.filterable-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  vertical-align: top;
+}
+
+.filterable-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.col-author {
+  width: 18%;
+  min-width: 120px;
+}
+
+.col-title {
+  width: 48%;
+}
+
+.col-year {
+  width: 8%;
+  min-width: 60px;
+  text-align: center;
+}
+
+.col-venue {
+  width: 26%;
+  min-width: 120px;
+}
+
+.pub-links {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.no-results {
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  .filterable-table-container {
+    padding: 0.5rem;
+  }
+  .filterable-table th,
+  .filterable-table td {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}

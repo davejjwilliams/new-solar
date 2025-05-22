@@ -1,0 +1,35 @@
+[
+  {
+    "author": "Alice Smith",
+    "title": "Solar Energy Advances",
+    "links": [
+      { "text": "DOI", "url": "https://doi.org/10.1000/solar1" },
+      { "text": "arXiv", "url": "https://arxiv.org/abs/solar1" }
+    ],
+    "year": 2022,
+    "venue": "Journal of Solar Research"
+  },
+  {
+    "author": "Bob Johnson",
+    "title": "Photovoltaic Materials",
+    "links": [
+      { "text": "Publisher", "url": "https://publisher.com/pv-materials" }
+    ],
+    "year": 2023,
+    "venue": "PV Conference"
+  },
+  {
+    "author": "Charlie Lee",
+    "title": "Renewable Integration",
+    "links": [{ "text": "DOI", "url": "https://doi.org/10.1000/renewable" }],
+    "year": 2021,
+    "venue": "Energy Symposium"
+  },
+  {
+    "author": "Charlie Lee",
+    "title": "Renewable Integration",
+    "links": [{ "text": "DOI", "url": "https://doi.org/10.1000/renewable" }],
+    "year": 2021,
+    "venue": "Energy Symposium"
+  }
+]
