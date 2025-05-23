@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav>
       <a href='/'>
-        <img src='/favicon.png' alt='Logo' className='logo' />
+        <img src='/favicon.png' alt='Logo' className='logo nav-logo' />
       </a>
       <div className='navbar-container' style={{ position: 'relative' }}>
         <button

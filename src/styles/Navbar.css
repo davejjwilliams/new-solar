@@ -13,7 +13,7 @@ nav {
   justify-content: center; /* Center all icons and logo horizontally */
 }
 
-.logo {
+.nav-logo {
   height: 4em;
 }
 
@@ -76,20 +76,20 @@ nav {
 }
 
 @media (min-width: 1081px) {
-  .logo {
+  .nav-logo {
     position: absolute;
     top: 0;
   }
 }
 
 @media (max-width: 1230px) {
-  .logo {
+  .nav-logo {
     display: none;
   }
 }
 
 @media (max-width: 1080px) {
-  .logo {
+  .nav-logo {
     margin: 0 auto;
     display: block;
     position: static;
