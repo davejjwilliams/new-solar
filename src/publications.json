@@ -1,35 +1,83 @@
 [
   {
-    "author": "Alice Smith",
-    "title": "Solar Energy Advances",
+    "author": "Jinfeng Wen, Zhenpeng Chen, Jianshu Zhao, Federica Sarro, Haodi Ping, Ying Zhang, Shangguang Wang, Xuanzhe Liu",
+    "title": "SCOPE: Performance Testing for Serverless Computing",
     "links": [
-      { "text": "DOI", "url": "https://doi.org/10.1000/solar1" },
-      { "text": "arXiv", "url": "https://arxiv.org/abs/solar1" }
+      { "text": "PDF", "url": "https://arxiv.org/pdf/2306.01620.pdf" }
     ],
-    "year": 2022,
-    "venue": "Journal of Solar Research"
+    "year": 2025,
+    "venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)"
   },
   {
-    "author": "Bob Johnson",
-    "title": "Photovoltaic Materials",
+    "author": "Thanatad Songpetchmongkol, Aymeric Blot, Justyna Petke",
+    "title": "Empirical Comparison of Runtime Improvement Approaches: Genetic Improvement, Parameter Tuning, and Their Combination",
     "links": [
-      { "text": "Publisher", "url": "https://publisher.com/pv-materials" }
+      { "text": "PDF", "url": "pdf/songpetchmongkol_2025_GI.pdf" }
     ],
-    "year": 2023,
-    "venue": "PV Conference"
+    "year": 2025,
+    "venue": "14th International Workshop on Genetic Improvement @ICSE 2025"
   },
   {
-    "author": "Charlie Lee",
-    "title": "Renewable Integration",
-    "links": [{ "text": "DOI", "url": "https://doi.org/10.1000/renewable" }],
-    "year": 2021,
-    "venue": "Energy Symposium"
+    "author": "William B. Langdon and Bobby R. Bruce",
+    "title": "The gem5 C++ glibc Heap Fitness Landscape",
+    "links": [
+      { "text": "PDF", "url": "pdf/langdon_2025_GI.pdf" }
+    ],
+    "year": 2025,
+    "venue": "14th International Workshop on Genetic Improvement @ICSE 2025"
   },
   {
-    "author": "Charlie Lee",
-    "title": "Renewable Integration",
-    "links": [{ "text": "DOI", "url": "https://doi.org/10.1000/renewable" }],
-    "year": 2021,
-    "venue": "Energy Symposium"
+    "author": "William B. Langdon and David Clark",
+    "title": "Population Diversity, Information Theory and Genetic Improvement",
+    "links": [
+      { "text": "PDF", "url": "pdf/Langdon_2025_EuroGP.pdf" }
+    ],
+    "year": 2025,
+    "venue": "European Conference on Genetic Programming, EuroGP 2025"
+  },
+  {
+    "author": "Karine Even-Mendoza, Hector D. Menendez, W.B Langdon, Aidan Dakhama, Justyna Petke, Bobby R. Bruce",
+    "title": "Search+LLM-based Testing for ARM Simulators",
+    "links": [
+      { "text": "PDF", "url": "pdf/ICSE_SEIP_2025___SearchSYS_and_ARM.pdf" }
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)"
+  },
+  {
+    "author": "Jinfeng Wen, Zhenpeng Chen, Federica Sarro, Shangguang Wang",
+    "title": "Unveiling Overlooked Performance Variance in Serverless Computing",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2305.04309" }
+    ],
+    "year": 2025,
+    "venue": "Empirical Software Engineering (EMSE) Journal"
+  },
+  {
+    "author": "Tosin Fadahunsi, Giordano d’Aloisio, Antinisca Di Marco, Federica Sarro",
+    "title": "How Do Generative Models Draw a Software Engineer? A Case Study on Stable Diffusion Bias",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2501.09014" }
+    ],
+    "year": 2025,
+    "venue": "1st International Workshop on Fairness in Software Systems"
+  },
+  {
+    "author": "Naman Ahuja, Yle Feng, Luming Li, Amisha Malik, Thuvaragan Sivayoganathan, Navveen Balani, Srinivasan Rakhunathan, Federica Sarro",
+    "title": "Automatically Assessing Software Architecture Compliance With Green Software Patterns",
+    "links": [
+      { "text": "PDF", "url": "pdf/EcoDocSense_Greens2025.pdf" }
+    ],
+    "year": 2025,
+    "venue": "9th International Workshop on Green and Sustainable Software (GREENS’25)"
+  },
+  {
+    "author": "Giordano d’Aloisio, Luca Traini, Federica Sarro, Antinisca Di Marco",
+    "title": "On the Compression of Language Models for Code: An Empirical Study on CodeBERT",
+    "links": [
+      { "text": "arXiv", "url": "https://arxiv.org/abs/2412.13737" }
+    ],
+    "year": 2025,
+    "venue": "IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) 2025"
   }
 ]

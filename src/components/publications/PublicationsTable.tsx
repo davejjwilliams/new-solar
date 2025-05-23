@@ -68,6 +68,7 @@ const PublicationsTable: FunctionComponent<PublicationsTableProps> = () => {
                 <div className='pub-links'>
                   {pub.links.map((link, idx) => (
                     <div key={idx}>
+                      [
                       <a
                         href={link.url}
                         target='_blank'
@@ -75,6 +76,7 @@ const PublicationsTable: FunctionComponent<PublicationsTableProps> = () => {
                       >
                         {link.text}
                       </a>
+                      ]
                     </div>
                   ))}
                 </div>
