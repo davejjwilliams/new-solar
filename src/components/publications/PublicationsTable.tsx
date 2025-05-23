@@ -1,4 +1,5 @@
 import { useState, type FunctionComponent } from 'react';
+import TextLink from '../general/TextLink';
 import '../../styles/PublicationsTable.css';
 import publications from '../../publications.json'; // <-- Add this import
 
@@ -69,14 +70,7 @@ const PublicationsTable: FunctionComponent<PublicationsTableProps> = () => {
                   {pub.links.map((link, idx) => (
                     <div key={idx}>
                       [
-                      <a
-                        href={link.url}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        {link.text}
-                      </a>
-                      ]
+                      <TextLink url={link.url} text={link.text} />]
                     </div>
                   ))}
                 </div>

@@ -28,6 +28,19 @@
   text-align: center;
 }
 
+.text-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
 .members-subtitle {
   font-size: 1.5em;
   font-weight: 500;
@@ -70,8 +83,9 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   border: 1px solid #e1e1e1;
+  margin: 0 auto;
 }
 
 .window-header {
