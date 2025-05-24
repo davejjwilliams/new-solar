@@ -49,7 +49,7 @@
 }
 
 .collapsible-content.open {
-  max-height: 1000px;
+  max-height: 100000px;
 }
 
 .collapsible-title {
