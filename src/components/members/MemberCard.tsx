@@ -1,22 +1,35 @@
-// Define the props type
+import type { FunctionComponent } from 'react';
+
 interface MemberCardProps {
     name: string;
+    title: string;
+    subtitle: string;
     imgUrl: string;
     webUrl: string;
 }
 
-// Use the props type in the component
-const MemberCard: React.FC<MemberCardProps> = ({ name, imgUrl, webUrl }) => {
+const MemberCard: FunctionComponent<MemberCardProps> = ({ name, title, subtitle, imgUrl, webUrl }) => {
+    const [firstName, ...lastNameParts] = name.split(" ");
+    const lastName = lastNameParts.join(" ");
+
     return (
         <div className="member-card">
             <div>
                 <a href={webUrl} target="_blank" rel="noopener noreferrer">
-                    <img src={imgUrl} alt={name} />
+                    <img src={"/assets/member-images/" + imgUrl} alt={name} />
                 </a>
             </div>
+            <div className="member-title">{title}</div>
             <div className="member-card-name">
-                <a href={webUrl} target="_blank" rel="noopener noreferrer">{name}</a>
+                <a href={webUrl} target="_blank" rel="noopener noreferrer">
+                    {firstName}
+                    <br />
+                    {lastName}
+                </a>
             </div>
+            {subtitle !== "" && <div className="member-card-subtitle">
+                {subtitle}
+            </div>}
         </div>
     );
 };
