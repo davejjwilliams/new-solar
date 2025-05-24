@@ -16,6 +16,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,40 +42,23 @@
   text-decoration: underline;
 }
 
-.members-subtitle {
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.collapsible-content.open {
+  max-height: 1000px;
+}
+
+.collapsible-title {
   font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 0.5em;
-}
-
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1em;
-}
-
-.member-card {
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding: 1em;
-  text-align: center;
-  transition: transform 300ms, box-shadow 300ms;
-}
-.member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-.member-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.member-card a {
-  text-decoration: none;
-  color: inherit;
-}
-.member-card a:hover {
-  text-decoration: underline;
+  cursor: 'pointer';
+  display: 'flex';
+  align-items: 'center'
 }
 
 .window-card {
@@ -90,7 +74,8 @@
 
 .window-header {
   background: #f6f6f6;
-  padding: 16px; /* Increased from 12px */
+  padding: 16px;
+  /* Increased from 12px */
   border-bottom: 1px solid #e1e1e1;
   display: flex;
   align-items: center;
@@ -99,16 +84,20 @@
 
 .window-controls {
   display: flex;
-  gap: 8px; /* Increased from 6px */
+  gap: 8px;
+  /* Increased from 6px */
 }
 
 .window-button {
-  width: 16px; /* Increased from 12px */
-  height: 16px; /* Increased from 12px */
+  width: 16px;
+  /* Increased from 12px */
+  height: 16px;
+  /* Increased from 12px */
   border-radius: 50%;
   border: none;
   position: relative;
-  cursor: pointer; /* Add pointer cursor on hover */
+  cursor: pointer;
+  /* Add pointer cursor on hover */
 }
 
 .window-button::after {
@@ -117,8 +106,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  width: 8px; /* Increased from 6px */
-  height: 8px; /* Increased from 6px */
+  width: 8px;
+  /* Increased from 6px */
+  height: 8px;
+  /* Increased from 6px */
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   transition: transform 150ms ease;
@@ -141,10 +132,13 @@
 }
 
 .window-title {
-  margin-left: 12px; /* Increased from 8px */
-  font-size: 16px; /* Increased from 13px */
+  margin-left: 12px;
+  /* Increased from 8px */
+  font-size: 16px;
+  /* Increased from 13px */
   color: #4a4a4a;
-  font-weight: 600; /* Increased from 500 */
+  font-weight: 600;
+  /* Increased from 500 */
 }
 
 .window-content {

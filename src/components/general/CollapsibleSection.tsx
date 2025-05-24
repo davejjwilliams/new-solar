@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiChevronRight, FiChevronDown } from 'react-icons/fi'; // Import icons
 
 interface CollapsibleSectionProps {
     title: string;
@@ -6,8 +7,6 @@ interface CollapsibleSectionProps {
     children: React.ReactNode;
 }
 
-// TODO: Add icon to the title
-// TODO: Add animation to the opening and closing of the section
 const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({ title, open, children }) => {
     const [isOpen, setIsOpen] = useState(open);
 
@@ -17,10 +16,17 @@ const CollapsibleSection: React.FC<CollapsibleSectionProps> = ({ title, open, ch
 
     return (
         <div className="collapsible-section">
-            <div className='members-subtitle' onClick={toggleSection} style={{ cursor: 'pointer' }}>
+            <div
+                className="collapsible-title"
+                onClick={toggleSection}
+                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            >
+                {isOpen ? <FiChevronDown /> : <FiChevronRight />} {/* Icon changes based on isOpen */}
                 {title}
             </div>
-            {isOpen && <div className="collapsible-content">{children}</div>}
+            <div className={`collapsible-content ${isOpen ? 'open' : ''}`}>
+                {children}
+            </div>
         </div>
     );
 };
