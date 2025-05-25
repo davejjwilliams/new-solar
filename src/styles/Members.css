@@ -32,12 +32,15 @@
 }
 
 .member-card a:hover {
-    font-weight: 600;
     color: #2563eb;
 }
 
 .member-card-name {
     font-size: 1.25em;
+}
+
+.member-card-first-name {
+    font-weight: 600;
 }
 
 .member-title {

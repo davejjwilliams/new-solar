@@ -1,42 +1,90 @@
 [
-    {
-        "name": "Federica Sarro",
-        "title":"Professor",
-        "role": "academic",
-        "subtitle": "Head of Group",
-        "imgUrl": "FedericaSarro.jpeg",
-        "webUrl": "http://www0.cs.ucl.ac.uk/staff/F.Sarro/"
-    },
-    {
-        "name": "Mark Harman",
-        "title":"Professor",
-        "role": "academic",
-        "subtitle": "",
-        "imgUrl": "MarkHarman.jpg",
-        "webUrl": "http://www0.cs.ucl.ac.uk/staff/M.Harman/"
-    },
-    {
-        "name": "Justyna Petke",
-        "title":"Professor",
-        "role": "academic",
-        "subtitle": "",
-        "imgUrl": "JustynaPetke.jpg",
-        "webUrl": "http://www0.cs.ucl.ac.uk/staff/J.Petke/index.html"
-    },
-    {
-        "name": "He Ye",
-        "title":"Dr",
-        "role": "academic",
-        "subtitle": "",
-        "imgUrl": "HeYe.jpeg",
-        "webUrl": "https://heye.me/"
-    },
-    {
-        "name": "Dave Williams",
-        "title": "Mr",
-        "role": "phd",
-        "subtitle": "Developer Experience",
-        "imgUrl": "DaveWilliams.png",
-        "webUrl": "https://davejjwilliams.github.io/"
-    }
+  {
+    "name": "Federica Sarro",
+    "title": "Professor",
+    "role": "academic",
+    "subtitle": "Head of Group",
+    "imgUrl": "FedericaSarro.jpeg",
+    "webUrl": "http://www0.cs.ucl.ac.uk/staff/F.Sarro/"
+  },
+  {
+    "name": "Mark Harman",
+    "title": "Professor",
+    "role": "academic",
+    "subtitle": "",
+    "imgUrl": "MarkHarman.jpg",
+    "webUrl": "http://www0.cs.ucl.ac.uk/staff/M.Harman/"
+  },
+  {
+    "name": "Justyna Petke",
+    "title": "Professor",
+    "role": "academic",
+    "subtitle": "",
+    "imgUrl": "JustynaPetke.jpg",
+    "webUrl": "http://www0.cs.ucl.ac.uk/staff/J.Petke/index.html"
+  },
+  {
+    "name": "He Ye",
+    "title": "Dr",
+    "role": "academic",
+    "subtitle": "",
+    "imgUrl": "HeYe.jpeg",
+    "webUrl": "https://heye.me/"
+  },
+  {
+    "name": "Qunying Song",
+    "title": "Dr",
+    "role": "fellow",
+    "subtitle": "",
+    "imgUrl": "QunyingSong.jpg",
+    "webUrl": "https://scholar.google.com/citations?user=xRb7Ir4AAAAJ&hl=en"
+  },
+  {
+    "name": "Bill Langdon",
+    "title": "Professor",
+    "role": "honorary-fellow",
+    "subtitle": "",
+    "imgUrl": "BillLangdon.jpg",
+    "webUrl": "http://www0.cs.ucl.ac.uk/staff/w.langdon/"
+  },
+  {
+    "name": "Maria Kechaiga",
+    "title": "Dr",
+    "role": "honorary-fellow",
+    "subtitle": "",
+    "imgUrl": "MariaKechaiga.jpg",
+    "webUrl": "https://mkechagia.github.io"
+  },
+  {
+    "name": "Dave Williams",
+    "title": "Mr",
+    "role": "phd",
+    "subtitle": "Developer Experience",
+    "imgUrl": "DaveWilliams.png",
+    "webUrl": "https://davejjwilliams.github.io/"
+  },
+  {
+    "name": "Sisi Li",
+    "title": "Ms",
+    "role": "visitor",
+    "subtitle": "",
+    "imgUrl": "SisiLi.jpg",
+    "webUrl": "/members"
+  },
+  {
+    "name": "James Callan",
+    "title": "Dr",
+    "role": "former",
+    "subtitle": "",
+    "imgUrl": "JamesCallan.jpeg",
+    "webUrl": "http://www.cs.ucl.ac.uk/drupalpeople/J.Callan.html"
+  },
+  {
+    "name": "Francesco Califano",
+    "title": "Mr",
+    "role": "distinguished-alumni",
+    "subtitle": "",
+    "imgUrl": "FrancescoCalifano.jpg",
+    "webUrl": "https://www.linkedin.com/in/francali"
+  }
 ]

@@ -22,7 +22,7 @@ const MemberCard: FunctionComponent<MemberCardProps> = ({ name, title, subtitle,
             <div className="member-title">{title}</div>
             <div className="member-card-name">
                 <a href={webUrl} target="_blank" rel="noopener noreferrer">
-                    {firstName}
+                    <span className="member-card-first-name">{firstName}</span>
                     <br />
                     {lastName}
                 </a>
