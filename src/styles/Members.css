@@ -1,57 +1,133 @@
+.members-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.members-content {
+  flex: 1;
+}
+.members-menu {
+  min-width: 220px;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.members-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.members-menu a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+.members-menu a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
 .member-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1em;
-    padding-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding-bottom: 1em;
 }
 
 .member-card {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    transition: transform 300ms, box-shadow 300ms;
-    border-radius: 0;
-    box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  transition: transform 300ms, box-shadow 300ms;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .member-card img {
-    width: 100%; /* Ensures the image fills the container width */
-    height: 250px; /* Sets a fixed height for all images */
-    object-fit: cover; /* Maintains aspect ratio and crops excess */
-    filter: grayscale(100%);
-    transition: filter 300ms ease;
+  width: 100%; /* Ensures the image fills the container width */
+  height: 250px; /* Sets a fixed height for all images */
+  object-fit: cover; /* Maintains aspect ratio and crops excess */
+  filter: grayscale(100%);
+  transition: filter 300ms ease;
 }
 
 .member-card:hover img {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .member-card a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .member-card a:hover {
-    color: #2563eb;
+  color: #2563eb;
 }
 
 .member-card-name {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .member-card-first-name {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .member-title {
-    font-size: 0.8em;
-    text-decoration: underline;
-    color: #676767;
-    font-weight: 700;
+  font-size: 0.8em;
+  text-decoration: underline;
+  color: #676767;
+  font-weight: 700;
 }
 
 .member-card-subtitle {
-    font-size: 1em;
-    color: #6b7280;
-    font-weight: 400;
+  font-size: 1em;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.2s;
+}
+.scroll-to-top-btn:hover {
+  background: #1e40af;
+}
+
+@media (max-width: 900px) {
+  .members-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .members-menu {
+    position: static;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .members-menu ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
 }

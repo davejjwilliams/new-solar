@@ -1,6 +1,7 @@
 import MemberCard from '../components/members/MemberCard';
 import CollapsibleSection from '../components/general/CollapsibleSection';
 import type { FunctionComponent } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 import '../styles/Members.css';
 import members from '../members.json';
 
@@ -13,114 +14,115 @@ const getMemberSubset = (role: string, filter: boolean) => {
       a.name.localeCompare(b.name)
     );
   }
-  return filteredMembers;
+  return filteredMembers || [];
 };
 
 const Members: FunctionComponent<MembersProps> = () => {
-  // Filter and sort the members by role and name
-  const academics = getMemberSubset('academic', false) || [];
-  const fellows = getMemberSubset('fellow', true) || [];
-  const honoraryFellows = getMemberSubset('honorary-fellow', true) || [];
-  const phdCandidates = getMemberSubset('phd', true) || [];
-  const formerMembers = getMemberSubset('former', true) || [];
-  const researchVisitors = getMemberSubset('visitor', true) || [];
-  const distinguishedAlumni =
-    getMemberSubset('distinguished-alumni', true) || [];
+  const groupList = [
+    {
+      id: 'academics',
+      label: 'Academics',
+      members: getMemberSubset('academic', false),
+    },
+    {
+      id: 'fellows',
+      label: 'Research Fellows',
+      members: getMemberSubset('fellow', true),
+    },
+    {
+      id: 'honorary-fellows',
+      label: 'Honorary Research Fellows',
+      members: getMemberSubset('honorary-fellow', true),
+    },
+    {
+      id: 'phd-candidates',
+      label: 'PhD Candidates',
+      members: getMemberSubset('phd', true),
+    },
+    {
+      id: 'former-members',
+      label: 'Former Members',
+      members: getMemberSubset('former', true),
+    },
+    {
+      id: 'research-visitors',
+      label: 'Research Visitors',
+      members: getMemberSubset('visitor', true),
+    },
+    {
+      id: 'distinguished-alumni',
+      label: 'Distinguished BSc/MSc Alumni',
+      members: getMemberSubset('distinguished-alumni', true),
+    },
+  ];
+  // Smooth scroll handler
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView();
+      window.history.replaceState(null, '', `#${id}`);
+    }
+  };
+
+  // Scroll to top handler
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <>
       <div className='page-title'>The SOLAR Team</div>
-      <CollapsibleSection title='Academics' open={true}>
-        <div className='member-grid'>
-          {academics.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
+      <div className='members-layout'>
+        <div className='members-menu'>
+          <ul>
+            {groupList.map((group) => (
+              <li key={group.id}>
+                <a
+                  href={`#${group.id}`}
+                  onClick={(e) => handleNavClick(e, group.id)}
+                >
+                  {group.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className='members-content'>
+          {groupList.map((group) => (
+            <CollapsibleSection
+              key={group.id}
+              title={group.label}
+              open={true}
+              id={group.id}
+            >
+              <div className='member-grid'>
+                {group.members.map((member) => (
+                  <MemberCard
+                    key={member.name}
+                    name={member.name}
+                    title={member.title}
+                    subtitle={member.subtitle}
+                    imgUrl={member.imgUrl}
+                    webUrl={member.webUrl}
+                  />
+                ))}
+              </div>
+            </CollapsibleSection>
           ))}
         </div>
-      </CollapsibleSection>
-      <CollapsibleSection title='Research Fellows' open={true}>
-        <div className='member-grid'>
-          {fellows.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
-          ))}
-        </div>
-      </CollapsibleSection>
-      <CollapsibleSection title='Honorary Research Fellows' open={true}>
-        <div className='member-grid'>
-          {honoraryFellows.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
-          ))}
-        </div>
-      </CollapsibleSection>
-      <CollapsibleSection title='PhD Candidates' open={true}>
-        <div className='member-grid'>
-          {phdCandidates.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
-          ))}
-        </div>
-      </CollapsibleSection>
-      <CollapsibleSection title='Former Members' open={true}>
-        <div className='member-grid'>
-          {formerMembers.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
-          ))}
-        </div>
-      </CollapsibleSection>
-      <CollapsibleSection title='Research Visitors' open={true}>
-        <div className='member-grid'>
-          {researchVisitors.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
-          ))}
-        </div>
-      </CollapsibleSection>
-      <CollapsibleSection title='Distinguished BSc/MSc Alumni' open={true}>
-        <div className='member-grid'>
-          {distinguishedAlumni.map((member) => (
-            <MemberCard
-              name={member.name}
-              title={member.title}
-              subtitle={member.subtitle}
-              imgUrl={member.imgUrl}
-              webUrl={member.webUrl}
-            />
-          ))}
-        </div>
-      </CollapsibleSection>
+      </div>
+      <button
+        className='scroll-to-top-btn'
+        title='Scroll to top'
+        onClick={handleScrollTop}
+        aria-label='Scroll to top'
+      >
+        <FaArrowUp />
+      </button>
     </>
   );
 };
