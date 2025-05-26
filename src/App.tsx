@@ -3,6 +3,7 @@ import Navbar from './components/general/Navbar';
 import Home from './pages/Home';
 import Research from './pages/Research';
 import Publications from './pages/Publications';
+import Awards from './pages/Awards';
 import Members from './pages/Members';
 import './styles/App.css';
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/research' element={<Research />} />
           <Route path='/publications' element={<Publications />} />
+          <Route path='/awards' element={<Awards />} />
           <Route path='/members' element={<Members />} />
         </Routes>
       </div>

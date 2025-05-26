@@ -1,0 +1,43 @@
+.award-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.award-card-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.award-card-meta {
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.award-card-type {
+  font-weight: 500;
+}
+
+.award-card-title {
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+
+.award-card-recipient {
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.award-card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.award-card__link:last-child {
+  margin-right: 0;
+}

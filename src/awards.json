@@ -1,0 +1,142 @@
+[
+  {
+    "awardName": "Challenge Track Winner",
+    "type": "Conference",
+    "venue": "SSBSE 2024",
+    "title": "GreenStableYolo: Optimizing Inference Time and Image Quality of Text-to-Image Generation",
+    "recipient": "Jingzhi Gong, Sisi Li, Giordano d’Aloisio, Zishuo Ding, Yulong Ye, William B. Langdon, and Federica Sarro",
+    "paperUrl": "https://solar.cs.ucl.ac.uk/pdf/GreenStableYolo.pdf",
+    "awardUrl": "",
+    "year": 2024
+  },
+  {
+    "awardName": "ACM SIGSOFT Distinguished Paper Award",
+    "type": "Conference",
+    "venue": "ICSE-SEIP 2024",
+    "title": "User-Centric Deployment of Automated Program Repair at Bloomberg",
+    "recipient": "David Williams, James Callan, Serkan Kirbas, Sergey Mechtaev, Justyna Petke, Thomas Prideaux-Ghee, and Federica Sarro",
+    "paperUrl": "https://arxiv.org/pdf/2311.10516",
+    "awardUrl": "https://davejjwilliams.github.io/assets/ICSE24-SEIP-Award-Bloomberg.png",
+    "year": 2024
+  },
+  {
+    "awardName": "Best Paper Award",
+    "type": "Workshop",
+    "venue": "GI 2024",
+    "title": "Deep Mutations have Little Impact",
+    "recipient": "Bill Langdon and David Clark",
+    "paperUrl": "http://www.cs.ucl.ac.uk/staff/W.Langdon/ftp/papers/langdon_2024_GI.pdf",
+    "awardUrl": "",
+    "year": 2024
+  },
+  {
+    "awardName": "Best RENE Paper Award",
+    "type": "Conference",
+    "venue": "SANER 2024",
+    "title": "On The Effectiveness of One-Class Support Vector Machine in Different Defect Prediction Scenarios",
+    "recipient": "Rebecca Moussa, Danielle Azar, and Federica Sarro",
+    "paperUrl": "https://arxiv.org/pdf/2202.12074",
+    "awardUrl": "",
+    "year": 2024
+  },
+  {
+    "awardName": "Challenge Track Winner",
+    "type": "Conference",
+    "venue": "SSBSE 2023",
+    "title": "SearchGEM5: Towards Reliable Gem5 with Search Based Software Testing and Large Language Models",
+    "recipient": "Aidan Dakhama, Karine Even-Mendoza, William B. Langdon, Héctor D. Menéndez, Justyna Petke",
+    "paperUrl": "https://discovery.ucl.ac.uk/id/eprint/10180562/1/main.pdf",
+    "awardUrl": "",
+    "year": 2023
+  },
+  {
+    "awardName": "Associate Editor of the year",
+    "type": "Special",
+    "venue": "Automated Software Engineering journal",
+    "title": "",
+    "recipient": "Justyna Petke",
+    "paperUrl": "",
+    "awardUrl": "",
+    "year": 2023
+  },
+  {
+    "awardName": "Best Paper Award",
+    "type": "Workshop",
+    "venue": "GI 2022",
+    "title": "Evaluation of Genetic Improvement Tools for Improvement of Non-functional Properties of Software",
+    "recipient": "Shengje Zuo, Aymeric Blot, and Justyna Petke",
+    "paperUrl": "https://discovery.ucl.ac.uk/id/eprint/10152816/1/zuo_gi-gecco_2022.pdf",
+    "awardUrl": "https://geneticimprovementofsoftware.com/events/gecco2022",
+    "year": 2022
+  },
+  {
+    "awardName": "Challenge Track Winner",
+    "type": "Conference",
+    "venue": "SSBSE 2021",
+    "title": "Refining Fitness Functions for Search-Based Automated Program Repair: A Case Study with ARJA and ARJA-e",
+    "recipient": "Giovani Guizzo, Aymeric Blot, James Callan, Justyna Petke and Federica Sarro",
+    "paperUrl": "https://discovery.ucl.ac.uk/id/eprint/10131848/1/SSBSE2021-Guizzo-20.pdf",
+    "awardUrl": "https://ssbse.info/halloffame.html",
+    "year": 2021
+  },
+  {
+    "awardName": "ACM SIGSOFT Distinguished Artifact Award",
+    "type": "Conference",
+    "venue": "ICSE 2021",
+    "title": "Artifact for Enhancing Genetic Improvement of Software with Regression Test Selection",
+    "recipient": "Giovani Guizzo, Justyna Petke, Federica Sarro, Mark Harman",
+    "paperUrl": "https://rdr.ucl.ac.uk/articles/dataset/Replication_Package_for_Enhancing_Genetic_Improvement_of_Software_with_Regression_Test_Selection_/12890792/1",
+    "awardUrl": "https://2021.icse-conferences.org/details/icse-2021-Artifact-Evaluation/35/Artifact-for-Enhancing-Genetic-Improvement-of-Software-with-Regression-Test-Selection",
+    "year": 2021
+  },
+  {
+    "awardName": "2021 IEEE CS TCSE Rising Star Award",
+    "type": "Special",
+    "venue": "ICSE 2021",
+    "title": "Excellence in Software Engineering research with scholarly and real-world impact.",
+    "recipient": "Federica Sarro",
+    "paperUrl": "",
+    "awardUrl": "",
+    "year": 2021
+  },
+  {
+    "awardName": "Best Student Volunteer Award",
+    "type": "Special",
+    "venue": "ICSE 2021",
+    "title": "",
+    "recipient": "Rebecca Moussa",
+    "paperUrl": "",
+    "awardUrl": "",
+    "year": 2021
+  },
+  {
+    "awardName": "Distinguished PC Member Award",
+    "type": "Special",
+    "venue": "ASE 2020",
+    "title": "",
+    "recipient": "Justyna Petke",
+    "paperUrl": "",
+    "awardUrl": "",
+    "year": 2020
+  },
+  {
+    "awardName": "SIGSOFT Outstanding Research Award",
+    "type": "Special",
+    "venue": "ICSE 2019",
+    "title": "",
+    "recipient": "Mark Harman",
+    "paperUrl": "",
+    "awardUrl": "",
+    "year": 2019
+  },
+  {
+    "awardName": "2019 Harlan D. Mills Award",
+    "type": "Special",
+    "venue": "IEEE Computer Society",
+    "title": "Fundamental contributions throughout software engineering, including seminal contributions in establishing search-based software engineering, reigniting research in slicing and testing, and founding genetic improvement.",
+    "recipient": "Mark Harman",
+    "paperUrl": "",
+    "awardUrl": "",
+    "year": 2019
+  }
+]
