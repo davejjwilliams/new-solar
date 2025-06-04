@@ -56,12 +56,60 @@
     "webUrl": "https://mkechagia.github.io"
   },
   {
+    "name": "Zhenpeng Chen",
+    "title": "Dr",
+    "role": "honorary-fellow",
+    "subtitle": "",
+    "imgUrl": "ZhenpengChen.jpeg",
+    "webUrl": "https://chenzhenpeng18.github.io"
+  },
+  {
+    "name": "Rebecca Moussa",
+    "title": "Dr",
+    "role": "honorary-fellow",
+    "subtitle": "",
+    "imgUrl": "RebeccaMoussa.png",
+    "webUrl": "https://www.linkedin.com/in/rebeccamoussa/"
+  },
+  {
+    "name": "Alessio Petrozziello",
+    "title": "Dr",
+    "role": "honorary-fellow",
+    "subtitle": "",
+    "imgUrl": "AlessioPetrozziello.png",
+    "webUrl": "http://alessiopetrozziello.altervista.org"
+  },
+  {
+    "name": "Carol Hanna",
+    "title": "Ms",
+    "role": "phd",
+    "subtitle": "Automated Hot Fixing",
+    "imgUrl": "CarolHanna.jpeg",
+    "webUrl": "https://iris.ucl.ac.uk/iris/browse/profile?upi=CHANN29"
+  },
+  {
     "name": "Dave Williams",
     "title": "Mr",
     "role": "phd",
     "subtitle": "Developer Experience",
     "imgUrl": "DaveWilliams.png",
     "webUrl": "https://davejjwilliams.github.io/"
+  },
+  {
+    "name": "Mar Zamorano",
+    "title": "Ms",
+    "role": "phd",
+    "subtitle": "Procedural Content Generation for Video Games",
+    "imgUrl": "MarZamorano.jpg",
+    "webUrl": "https://davejjwilliams.github.io/"
+  },
+  {
+    "name": "Thanatad Songpetchmongkol",
+    "title": "Mr",
+    "role": "phd",
+    "subtitle": "Software Transplantation",
+    "imgUrl": "ThanatadSongpetchmongkol.jpg",
+    "webUrl": "https://www.linkedin.com/in/thanatad-songpetchmongkol"
   },
   {
     "name": "Sisi Li",
