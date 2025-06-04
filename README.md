@@ -33,7 +33,7 @@ Members are found in the `src/members.json` file. Please add/update members in t
 
 Please be careful to include the `role` carefully from the, as this determines under which category the member is placed.
 
-The `subtitle` appears under the member name and is optional. If you do not wish to include it, leave it as `"subtitle": ""`.
+The `subtitle` appears under the member name and is optional. If you do not wish to include it, leave it as `"subtitle": ""`. Same process for member `links`.
 
 The `imgUrl` represents the name of the file under the `/assets/member-images` directory. For example, if you have a photo at `/assets/member-images/example.jpg`, the entry in this file would be `"imgUrl": "example.jpg"`.
 
@@ -45,6 +45,10 @@ TEMPLATE: Copy and fill in for new members
   "role": "Role, available types: academic, fellow, honoraryFellow, phd",
   "subtitle": "Optional text under the name, e.g. used for PhD Topics",
   "imgUrl": "example.jpeg",
-  "webUrl": "Link to personal website"
-}
+  "links": {
+    "personal": "Link to personal website (optional)",
+    "scholar": "Link to google scholar (optional)",
+    "linkedin": "Link to LinkedIn profile (optional)"
+  }
+},
 ```
