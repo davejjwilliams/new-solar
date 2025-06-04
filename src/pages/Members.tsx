@@ -42,12 +42,17 @@ const Members: FunctionComponent<MembersProps> = () => {
     {
       id: 'former-members',
       label: 'Former Members',
-      members: getMemberSubset('former', true),
+      members: getMemberSubset('former-member', true),
     },
     {
       id: 'research-visitors',
       label: 'Research Visitors',
       members: getMemberSubset('visitor', true),
+    },
+    {
+      id: 'former-research-visitors',
+      label: 'Former Research Visitors',
+      members: getMemberSubset('former-visitor', true),
     },
     {
       id: 'distinguished-alumni',
@@ -107,7 +112,7 @@ const Members: FunctionComponent<MembersProps> = () => {
                     title={member.title}
                     subtitle={member.subtitle}
                     imgUrl={member.imgUrl}
-                    webUrl={member.webUrl}
+                    links={member.links}
                   />
                 ))}
               </div>

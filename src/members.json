@@ -3,9 +3,13 @@
     "name": "Federica Sarro",
     "title": "Professor",
     "role": "academic",
-    "subtitle": "Head of Group",
+    "subtitle": "Head of SOLAR",
     "imgUrl": "FedericaSarro.jpeg",
-    "webUrl": "http://www0.cs.ucl.ac.uk/staff/F.Sarro/"
+    "links": {
+      "personal": "http://www0.cs.ucl.ac.uk/staff/F.Sarro/",
+      "scholar": "https://scholar.google.com/citations?user=nW9MDIQAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Mark Harman",
@@ -13,7 +17,11 @@
     "role": "academic",
     "subtitle": "",
     "imgUrl": "MarkHarman.jpg",
-    "webUrl": "http://www0.cs.ucl.ac.uk/staff/M.Harman/"
+    "links": {
+      "personal": "http://www0.cs.ucl.ac.uk/staff/M.Harman/",
+      "scholar": "https://scholar.google.co.uk/citations?user=IwSN8IgAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Justyna Petke",
@@ -21,7 +29,11 @@
     "role": "academic",
     "subtitle": "",
     "imgUrl": "JustynaPetke.jpg",
-    "webUrl": "http://www0.cs.ucl.ac.uk/staff/J.Petke/index.html"
+    "links": {
+      "personal": "http://www0.cs.ucl.ac.uk/staff/J.Petke/index.html",
+      "scholar": "https://scholar.google.co.uk/citations?user=a6kdFxIAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "He Ye",
@@ -29,7 +41,11 @@
     "role": "academic",
     "subtitle": "",
     "imgUrl": "HeYe.jpeg",
-    "webUrl": "https://heye.me/"
+    "links": {
+      "personal": "https://heye.me/",
+      "scholar": "https://scholar.google.se/citations?user=K6V2VzsAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Qunying Song",
@@ -37,7 +53,11 @@
     "role": "fellow",
     "subtitle": "",
     "imgUrl": "QunyingSong.jpg",
-    "webUrl": "https://scholar.google.com/citations?user=xRb7Ir4AAAAJ&hl=en"
+    "links": {
+      "personal": "",
+      "scholar": "https://scholar.google.com/citations?user=xRb7Ir4AAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Bill Langdon",
@@ -45,7 +65,11 @@
     "role": "honorary-fellow",
     "subtitle": "",
     "imgUrl": "BillLangdon.jpg",
-    "webUrl": "http://www0.cs.ucl.ac.uk/staff/w.langdon/"
+    "links": {
+      "personal": "http://www0.cs.ucl.ac.uk/staff/w.langdon/",
+      "scholar": "https://scholar.google.com/citations?user=O5cSyYMAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Maria Kechaiga",
@@ -53,7 +77,11 @@
     "role": "honorary-fellow",
     "subtitle": "",
     "imgUrl": "MariaKechaiga.jpg",
-    "webUrl": "https://mkechagia.github.io"
+    "links": {
+      "personal": "https://mkechagia.github.io",
+      "scholar": "https://scholar.google.co.in/citations?user=UH14xAMAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Zhenpeng Chen",
@@ -61,7 +89,11 @@
     "role": "honorary-fellow",
     "subtitle": "",
     "imgUrl": "ZhenpengChen.jpeg",
-    "webUrl": "https://chenzhenpeng18.github.io"
+    "links": {
+      "personal": "https://chenzhenpeng18.github.io",
+      "scholar": "https://scholar.google.co.jp/citations?user=x_MdCmEAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Rebecca Moussa",
@@ -69,7 +101,11 @@
     "role": "honorary-fellow",
     "subtitle": "",
     "imgUrl": "RebeccaMoussa.png",
-    "webUrl": "https://www.linkedin.com/in/rebeccamoussa/"
+    "links": {
+      "personal": "",
+      "scholar": "https://scholar.google.com/citations?user=fdm9f9gAAAAJ",
+      "linkedin": "https://www.linkedin.com/in/rebeccamoussa/"
+    }
   },
   {
     "name": "Alessio Petrozziello",
@@ -77,7 +113,11 @@
     "role": "honorary-fellow",
     "subtitle": "",
     "imgUrl": "AlessioPetrozziello.png",
-    "webUrl": "http://alessiopetrozziello.altervista.org"
+    "links": {
+      "personal": "",
+      "scholar": "https://scholar.google.co.uk/citations?user=GH5r7LsAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Carol Hanna",
@@ -85,7 +125,11 @@
     "role": "phd",
     "subtitle": "Automated Hot Fixing",
     "imgUrl": "CarolHanna.jpeg",
-    "webUrl": "https://iris.ucl.ac.uk/iris/browse/profile?upi=CHANN29"
+    "links": {
+      "personal": "https://iris.ucl.ac.uk/iris/browse/profile?upi=CHANN29",
+      "scholar": "https://scholar.google.com/citations?user=FTK3wCkAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Dave Williams",
@@ -93,7 +137,11 @@
     "role": "phd",
     "subtitle": "Developer Experience",
     "imgUrl": "DaveWilliams.png",
-    "webUrl": "https://davejjwilliams.github.io/"
+    "links": {
+      "personal": "https://davejjwilliams.github.io/",
+      "scholar": "https://scholar.google.com/citations?user=96je9WgAAAAJ",
+      "linkedin": "https://www.linkedin.com/in/davejjwilliams/"
+    }
   },
   {
     "name": "Mar Zamorano",
@@ -101,7 +149,11 @@
     "role": "phd",
     "subtitle": "Procedural Content Generation for Video Games",
     "imgUrl": "MarZamorano.jpg",
-    "webUrl": "https://davejjwilliams.github.io/"
+    "links": {
+      "personal": "http://www.marzamorano.com/?i=1",
+      "scholar": "https://scholar.google.com/citations?user=ibytHfQAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "Thanatad Songpetchmongkol",
@@ -109,7 +161,11 @@
     "role": "phd",
     "subtitle": "Software Transplantation",
     "imgUrl": "ThanatadSongpetchmongkol.jpg",
-    "webUrl": "https://www.linkedin.com/in/thanatad-songpetchmongkol"
+    "links": {
+      "personal": "",
+      "scholar": "",
+      "linkedin": "https://www.linkedin.com/in/thanatad-songpetchmongkol"
+    }
   },
   {
     "name": "Sisi Li",
@@ -117,15 +173,107 @@
     "role": "visitor",
     "subtitle": "",
     "imgUrl": "SisiLi.jpg",
-    "webUrl": "/members"
+    "links": {
+      "personal": "",
+      "scholar": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Aymeric Blot",
+    "title": "Dr",
+    "role": "former-member",
+    "subtitle": "",
+    "imgUrl": "AymericBlot.png",
+    "links": {
+      "personal": "http://www0.cs.ucl.ac.uk/staff/a.blot/",
+      "scholar": "https://scholar.google.fr/citations?user=I8sfMwwAAAAJ",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Giovani Guizzo",
+    "title": "Dr",
+    "role": "former-member",
+    "subtitle": "",
+    "imgUrl": "GiovaniGuizzo.jpg",
+    "links": {
+      "personal": "https://sites.google.com/view/giovaniguizzo/home",
+      "scholar": "https://scholar.google.com/citations?user=U3xAxssAAAAJ",
+      "linkedin": ""
+    }
   },
   {
     "name": "James Callan",
     "title": "Dr",
-    "role": "former",
+    "role": "former-member",
     "subtitle": "",
     "imgUrl": "JamesCallan.jpeg",
-    "webUrl": "http://www.cs.ucl.ac.uk/drupalpeople/J.Callan.html"
+    "links": {
+      "personal": "http://www.cs.ucl.ac.uk/drupalpeople/J.Callan.html",
+      "scholar": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Jie Zhang",
+    "title": "Dr",
+    "role": "former-member",
+    "subtitle": "",
+    "imgUrl": "JieZhang.jpg",
+    "links": {
+      "personal": "https://sites.google.com/view/jie-zhang/home",
+      "scholar": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Max Hort",
+    "title": "Dr",
+    "role": "former-member",
+    "subtitle": "",
+    "imgUrl": "MaxHort.png",
+    "links": {
+      "personal": "https://maxhort.github.io/",
+      "scholar": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Vali Tawosi",
+    "title": "Dr",
+    "role": "former-member",
+    "subtitle": "",
+    "imgUrl": "ValiTawosi.jpg",
+    "links": {
+      "personal": "http://www0.cs.ucl.ac.uk/people/V.Tawosi.html",
+      "scholar": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Dominik Sobania",
+    "title": "Dr",
+    "role": "former-visitor",
+    "subtitle": "",
+    "imgUrl": "DominikSobania.jpeg",
+    "links": {
+      "personal": "https://en.wi.bwl.uni-mainz.de/dominik-sobania/",
+      "scholar": "",
+      "linkedin": ""
+    }
+  },
+  {
+    "name": "Katarzyna Biesialska",
+    "title": "Dr",
+    "role": "former-visitor",
+    "subtitle": "",
+    "imgUrl": "KatarzynaBiesialska.jpeg",
+    "links": {
+      "personal": "https://ksbsk.github.io/",
+      "scholar": "",
+      "linkedin": ""
+    }
   },
   {
     "name": "Francesco Califano",
@@ -133,6 +281,10 @@
     "role": "distinguished-alumni",
     "subtitle": "",
     "imgUrl": "FrancescoCalifano.jpg",
-    "webUrl": "https://www.linkedin.com/in/francali"
+    "links": {
+      "personal": "",
+      "scholar": "",
+      "linkedin": "https://www.linkedin.com/in/francali"
+    }
   }
 ]

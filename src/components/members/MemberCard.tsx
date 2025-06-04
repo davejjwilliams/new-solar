@@ -1,35 +1,51 @@
 import type { FunctionComponent } from 'react';
+import { FiLink } from 'react-icons/fi';
+import { SiGooglescholar } from 'react-icons/si';
+import { SiLinkedin } from 'react-icons/si';
 
 interface MemberCardProps {
     name: string;
     title: string;
     subtitle: string;
     imgUrl: string;
-    webUrl: string;
+    links: object;
 }
 
-const MemberCard: FunctionComponent<MemberCardProps> = ({ name, title, subtitle, imgUrl, webUrl }) => {
+const MemberCard: FunctionComponent<MemberCardProps> = ({ name, title, subtitle, imgUrl, links }) => {
     const [firstName, ...lastNameParts] = name.split(" ");
     const lastName = lastNameParts.join(" ");
 
     return (
         <div className="member-card">
             <div>
-                <a href={webUrl} target="_blank" rel="noopener noreferrer">
-                    <img src={"/assets/member-images/" + imgUrl} alt={name} />
-                </a>
+                <img src={"/assets/member-images/" + imgUrl} alt={name} />
+            </div>
+            <div className="member-links">
+                {Object.entries(links).map(([key, value]) => value !== "" && (
+                    <a
+                        key={key}
+                        href={value}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`member-link ${key}`}
+                        aria-label={key}
+                    >
+                        {key === "personal" && <FiLink />}
+                        {key === "scholar" && <SiGooglescholar />}
+                        {key === "linkedin" && <SiLinkedin />}
+                        {key !== "personal" && key !== "scholar" && key !== "linkedin" && (key.charAt(0).toUpperCase() + key.slice(1))}
+                    </a>
+                ))}
             </div>
             <div className="member-title">{title}</div>
             <div className="member-card-name">
-                <a href={webUrl} target="_blank" rel="noopener noreferrer">
-                    <span className="member-card-first-name">{firstName}</span>
-                    <br />
-                    {lastName}
-                </a>
+                <span className="member-card-first-name">{firstName}</span>
+                <br />
+                {lastName}
             </div>
-            {subtitle !== "" && <div className="member-card-subtitle">
+            <div className="member-card-subtitle">
                 {subtitle}
-            </div>}
+            </div>
         </div>
     );
 };

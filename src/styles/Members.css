@@ -3,9 +3,11 @@
   align-items: flex-start;
   gap: 2rem;
 }
+
 .members-content {
   flex: 1;
 }
+
 .members-menu {
   min-width: 220px;
   position: sticky;
@@ -16,6 +18,7 @@
   padding: 1.5rem 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
+
 .members-menu ul {
   list-style: none;
   padding: 0;
@@ -24,6 +27,7 @@
   flex-direction: column;
   gap: 1.25rem;
 }
+
 .members-menu a {
   text-decoration: none;
   color: #2563eb;
@@ -31,6 +35,7 @@
   font-size: 1.05rem;
   transition: color 0.2s;
 }
+
 .members-menu a:hover {
   color: #1e40af;
   text-decoration: underline;
@@ -45,23 +50,23 @@
 
 .member-card {
   background-color: transparent;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   transition: transform 300ms, box-shadow 300ms;
-  border-radius: 0;
+  border-radius: 8px;
   box-shadow: none;
 }
 
 .member-card img {
-  width: 100%; /* Ensures the image fills the container width */
-  height: 250px; /* Sets a fixed height for all images */
-  object-fit: cover; /* Maintains aspect ratio and crops excess */
-  filter: grayscale(100%);
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
   transition: filter 300ms ease;
+  border-radius: 8px;
 }
 
-.member-card:hover img {
-  filter: grayscale(0%);
+.member-card:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.18), 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .member-card a {
@@ -110,7 +115,59 @@
   font-size: 1.5rem;
   transition: background 0.2s;
 }
+
 .scroll-to-top-btn:hover {
+  background: #1e40af;
+}
+
+.member-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.member-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 24px;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  color: #fff !important;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.10);
+  transition: background 0.2s, color 0.2s;
+  font-size: 0.75rem;
+}
+
+.personal {
+  background: #aaaaaa;
+}
+
+.scholar {
+  background: #427eff;
+}
+
+.linkedin {
+  background: #2563eb;
+}
+
+.member-link:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.personal:hover {
+  background: #8b8b8b;
+}
+
+.scholar:hover {
+  background: #2956e7;
+}
+
+.linkedin:hover {
   background: #1e40af;
 }
 
@@ -119,11 +176,13 @@
     flex-direction: column;
     gap: 1.5rem;
   }
+
   .members-menu {
     position: static;
     width: 100%;
     margin-bottom: 1.5rem;
   }
+
   .members-menu ul {
     flex-direction: row;
     flex-wrap: wrap;
