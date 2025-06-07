@@ -8,3 +8,25 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+.embla__buttons {
+  display: flex;
+  justify-content: start;
+  gap: 0.5em;
+}
+.embla__button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.embla__button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.embla__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
