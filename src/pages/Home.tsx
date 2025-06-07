@@ -1,5 +1,6 @@
 import type { FunctionComponent } from 'react';
 import WindowCard from '../components/general/WindowCard';
+import Carousel from '../components/general/carousel/Carousel';
 
 type HomeProps = object;
 
@@ -17,6 +18,7 @@ const Home: FunctionComponent<HomeProps> = () => {
       <WindowCard title='Hello World'>
         <h1>This is Card Content</h1>
       </WindowCard>
+      <Carousel />
     </>
   );
 };
