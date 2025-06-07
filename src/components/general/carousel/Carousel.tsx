@@ -1,31 +1,59 @@
-import { useCallback, useEffect } from 'react'
-import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5'
+import { useEffect, useRef } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import { useAutoplay } from './CarouselAutoplay'
+import { useAutoplayProgress } from './CarouselAutoplayProgress'
 import WindowCard from '../WindowCard'
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons
+} from './CarouselArrowButtons'
+import { IoPlayOutline, IoPauseOutline } from 'react-icons/io5';
 import '../../../styles/Carousel.css'
 
 const HomeCarousel = () => {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 2000 })])
+    const progressNode = useRef<HTMLDivElement>(null)
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })])
     useEffect(() => {
         if (emblaApi) {
             console.log(emblaApi.slideNodes()) // Access API
         }
     }, [emblaApi])
 
-    const scrollPrev = useCallback(() => { if (emblaApi) emblaApi.scrollPrev() }, [emblaApi])
-    const scrollNext = useCallback(() => { if (emblaApi) emblaApi.scrollNext() }, [emblaApi])
+    const {
+        prevBtnDisabled,
+        nextBtnDisabled,
+        onPrevButtonClick,
+        onNextButtonClick
+    } = usePrevNextButtons(emblaApi)
+
+    const { autoplayIsPlaying, toggleAutoplay, onAutoplayButtonClick } = useAutoplay(emblaApi)
+    const { showAutoplayProgress } = useAutoplayProgress(emblaApi, progressNode)
 
     return (
         <WindowCard title="News">
-            <div className="embla__buttons">
-                <button className="embla__button embla__prev" onClick={scrollPrev}>
-                    <IoChevronBackOutline />
-                </button>
-                <button className="embla__button embla__next" onClick={scrollNext}>
-                    <IoChevronForwardOutline />
+            <div className="embla__controls">
+                <div className="embla__buttons">
+                    <PrevButton
+                        onClick={() => onAutoplayButtonClick(onPrevButtonClick)}
+                        disabled={prevBtnDisabled}
+                    />
+                    <NextButton
+                        onClick={() => onAutoplayButtonClick(onNextButtonClick)}
+                        disabled={nextBtnDisabled}
+                    />
+                </div>
+
+                <div className={`embla__progress`.concat(showAutoplayProgress ? '' : ' embla__progress--hidden')}>
+                    <div className="embla__progress__bar" ref={progressNode} />
+                </div>
+
+                <button className="embla__button" onClick={toggleAutoplay} type="button">
+                    {autoplayIsPlaying ? <IoPauseOutline /> : <IoPlayOutline />}
                 </button>
             </div>
+
             <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
                     <div className="embla__slide">
