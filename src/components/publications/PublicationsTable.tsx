@@ -1,7 +1,7 @@
 import { useState, type FunctionComponent } from 'react';
 import TextLink from '../general/TextLink';
 import '../../styles/PublicationsTable.css';
-import publications from '../../publications.json'; // <-- Add this import
+import publications from '../../publications.json';
 
 type PublicationsTableProps = object;
 

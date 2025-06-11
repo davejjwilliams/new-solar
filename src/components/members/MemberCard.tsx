@@ -16,7 +16,7 @@ const MemberCard: FunctionComponent<MemberCardProps> = ({ name, title, subtitle,
     const lastName = lastNameParts.join(" ");
 
     return (
-        <div className="member-card">
+        <div className="member-card glass">
             <div>
                 <img src={"/assets/member-images/" + imgUrl} alt={name} />
             </div>

@@ -6,6 +6,12 @@
   border: 1px solid #e1e1e1;
 }
 
+.glass {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(160px);
+  -webkit-backdrop-filter: blur(160px);
+}
+
 .logo {
   will-change: filter;
   transition: filter 300ms;
@@ -60,6 +66,84 @@
   cursor: 'pointer';
   display: 'flex';
   align-items: 'center'
+}
+
+.home-portrait {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  border: 2px solid #fff;
+  display: block;
+}
+
+.panel-grid-custom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.panel {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 2em;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.panel-large {
+  grid-row: 1 / span 3;
+  grid-column: 1 / 2;
+}
+
+.panel-small {
+  grid-column: 2 / 3;
+}
+
+.panel-icon {
+  font-size: 0.8em;
+}
+
+.panel-button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  height: 36px;
+  width: 36px;
+  border-radius: 16px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 2;
+}
+
+.panel-button:hover,
+.panel-button:focus {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.page-divider {
+  border: none;
+  height: 2px;
+  background: black;
+  margin: 2.5rem 0;
+  border-radius: 1px;
+  opacity: 0.7;
+  max-width: 500px;
+  margin: 2em auto;
 }
 
 .window-card {
