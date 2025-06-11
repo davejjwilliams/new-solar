@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { useAutoplay } from './CarouselAutoplay'
@@ -15,11 +15,6 @@ import '../../../styles/Carousel.css'
 const NewsCarousel = () => {
     const progressNode = useRef<HTMLDivElement>(null)
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })])
-    useEffect(() => {
-        if (emblaApi) {
-            console.log(emblaApi.slideNodes()) // Access API
-        }
-    }, [emblaApi])
 
     const {
         prevBtnDisabled,
@@ -29,7 +24,7 @@ const NewsCarousel = () => {
     } = usePrevNextButtons(emblaApi)
 
     const { autoplayIsPlaying, toggleAutoplay, onAutoplayButtonClick } = useAutoplay(emblaApi)
-    const { showAutoplayProgress } = useAutoplayProgress(emblaApi, progressNode)
+    const { showAutoplayProgress } = useAutoplayProgress(emblaApi, progressNode as React.RefObject<HTMLElement>)
 
     return (
         <WindowCard title="News">
