@@ -12,7 +12,7 @@ import {
 import { IoPlayOutline, IoPauseOutline } from 'react-icons/io5';
 import '../../../styles/Carousel.css'
 
-const HomeCarousel = () => {
+const NewsCarousel = () => {
     const progressNode = useRef<HTMLDivElement>(null)
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })])
     useEffect(() => {
@@ -71,4 +71,4 @@ const HomeCarousel = () => {
     )
 }
 
-export default HomeCarousel;
+export default NewsCarousel;
