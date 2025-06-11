@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   FaSun,
   FaFlask,
@@ -18,9 +19,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href='/'>
+      <Link to='/'>
         <img src='/favicon.png' alt='Logo' className='logo nav-logo' />
-      </a>
+      </Link>
       <div className='navbar-container' style={{ position: 'relative' }}>
         <button
           className='hamburger'
@@ -30,38 +31,38 @@ const Navbar = () => {
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
         <div className={`nav-links${menuOpen ? ' open' : ''}`}>
-          <a href='/' className='nav-link'>
+          <Link to='/' className='nav-link'>
             <FaSun className='nav-icon' />
             SOLAR Group
-          </a>
-          <a href='/research' className='nav-link'>
+          </Link>
+          <Link to='/research' className='nav-link'>
             <FaFlask className='nav-icon' />
             Research
-          </a>
-          <a href='/open-science' className='nav-link'>
+          </Link>
+          <Link to='/open-science' className='nav-link'>
             <FaBookOpen className='nav-icon' />
             Open Science
-          </a>
-          <a href='/publications' className='nav-link'>
+          </Link>
+          <Link to='/publications' className='nav-link'>
             <FaFileAlt className='nav-icon' />
             Publications
-          </a>
-          <a href='/awards' className='nav-link'>
+          </Link>
+          <Link to='/awards' className='nav-link'>
             <FaTrophy className='nav-icon' />
             Awards
-          </a>
-          <a href='/members' className='nav-link'>
+          </Link>
+          <Link to='/members' className='nav-link'>
             <FaUsers className='nav-icon' />
             People
-          </a>
-          <a href='/funding' className='nav-link'>
+          </Link>
+          <Link to='/funding' className='nav-link'>
             <FaHandHoldingUsd className='nav-icon' />
             Funding
-          </a>
-          <a href='/join-us' className='nav-link'>
+          </Link>
+          <Link to='/join-us' className='nav-link'>
             <FaUserPlus className='nav-icon' />
             Join Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
