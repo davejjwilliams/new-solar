@@ -29,8 +29,8 @@
 }
 
 .page-title {
-  font-size: 2.5em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 400;
   margin-bottom: 1em;
   text-align: center;
 }
@@ -81,7 +81,7 @@
 .panel-grid-custom {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr) auto;
   gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
@@ -91,7 +91,8 @@
   border-radius: 16px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: 300;
   padding: 1.5rem;
   position: relative;
 }
@@ -105,8 +106,22 @@
   grid-column: 2 / 3;
 }
 
+.panel-full-width {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+
 .panel-icon {
-  font-size: 0.8em;
+  font-size: 1.5rem;
+}
+
+.panel-figure {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.centred {
+  text-align: center;
 }
 
 .panel-button {
@@ -160,7 +175,6 @@
 .window-header {
   background: #f6f6f6;
   padding: 16px;
-  /* Increased from 12px */
   border-bottom: 1px solid #e1e1e1;
   display: flex;
   align-items: center;
@@ -170,19 +184,15 @@
 .window-controls {
   display: flex;
   gap: 8px;
-  /* Increased from 6px */
 }
 
 .window-button {
   width: 16px;
-  /* Increased from 12px */
   height: 16px;
-  /* Increased from 12px */
   border-radius: 50%;
   border: none;
   position: relative;
   cursor: pointer;
-  /* Add pointer cursor on hover */
 }
 
 .window-button::after {
