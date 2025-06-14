@@ -10,7 +10,10 @@ import awards from '../awards.json';
 type HomeProps = object;
 
 const Home: FunctionComponent<HomeProps> = () => {
-  const totalMembers = members.length;
+  const currentMembers = members.filter(
+    member => !['former-member', 'former-visitor', 'distinguished-alumni'].includes(member.role)
+  );
+  const totalMembers = currentMembers.length;
   const [memberCount, setMemberCount] = useState(1);
   const totalPublications = publications.length;
   const [publicationCount, setPublicationCount] = useState(1);
