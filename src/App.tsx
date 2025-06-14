@@ -5,6 +5,8 @@ import Research from './pages/Research';
 import Publications from './pages/Publications';
 import Awards from './pages/Awards';
 import Members from './pages/Members';
+import Funding from './pages/Funding';
+import JoinUs from './pages/JoinUs';
 import './styles/App.css';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path='/publications' element={<Publications />} />
           <Route path='/awards' element={<Awards />} />
           <Route path='/members' element={<Members />} />
+          <Route path='/funding' element={<Funding />} />
+          <Route path='/join-us' element={<JoinUs />} />
         </Routes>
       </div>
     </Router>

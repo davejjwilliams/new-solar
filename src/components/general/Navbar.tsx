@@ -39,10 +39,6 @@ const Navbar = () => {
             <FaFlask className='nav-icon' />
             Research
           </Link>
-          <Link to='/open-science' className='nav-link'>
-            <FaBookOpen className='nav-icon' />
-            Open Science
-          </Link>
           <Link to='/publications' className='nav-link'>
             <FaFileAlt className='nav-icon' />
             Publications
