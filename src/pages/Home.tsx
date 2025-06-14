@@ -62,7 +62,7 @@ const Home: FunctionComponent<HomeProps> = () => {
       </div>
 
       <div className="panel-grid-custom">
-        <Panel size="large" url="/research">
+        <Panel panelType="large" url="/research">
           <img src="assets/member-images/FedericaSarro.jpeg" alt="Federica Sarro" className='home-portrait' />
           Led by <TextLink url="http://www0.cs.ucl.ac.uk/staff/F.Sarro/" text="Prof. Federica Sarro" /> at
           <br />
@@ -71,23 +71,27 @@ const Home: FunctionComponent<HomeProps> = () => {
           <br />
           Research at the interface of <b>Software Optimisation</b>, <b>Machine/Evolutionary Learning</b> and <b>Analytics</b>.
         </Panel>
-        <Panel size="small" url="/members">
+        <Panel panelType="small" url="/members">
           <FaUsers className='panel-icon' /> <span className='panel-figure'>{memberCount}</span> Members
         </Panel>
-        <Panel size="small" url="/publications">
+        <Panel panelType="small" url="/publications">
           <FaFileAlt className='panel-icon' /> <span className='panel-figure'>{publicationCount}</span> Publications
         </Panel>
-        <Panel size="small" url="/awards">
+        <Panel panelType="small" url="/awards">
           <FaTrophy className='panel-icon' /> <span className='panel-figure'>{awardCount}</span> Awards
         </Panel>
-        <Panel size="full">
+        <Panel panelType="first-full">
           <div className="centred">
             Our work has obtained several <TextLink url="/awards" text="international awards" /> and <TextLink url="/funding" text="generous funding" />. We have collaborated not only with several other researchers world-wide, but also industrial partners including <b>Meta</b>, <b>Google</b>, <b>J.P. Morgan</b>, and <b>Bloomberg</b>.
           </div>
         </Panel>
+        <Panel panelType="second-full">
+          <div className="centred">
+            In SOLAR, we promote and embrace open science, and thus we strive to share our publications, data, tools, and models inside and outside our group. You can find the presentations of some of our work on our <TextLink url="https://www.youtube.com/@solar4709" text="YouTube channel" />.
+          </div>
+        </Panel>
       </div>
       <p>
-        In SOLAR, we promote and embrace open science, and thus we strive to share our publications, data, tools, and models inside and outside our group. You can find the presentations of some of our work on our YouTube channel.
       </p>
 
       <hr className="page-divider" />

@@ -2,19 +2,29 @@ import { type FunctionComponent, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa'; // Import arrow right icon
 
+type PanelType = 'small' | 'large' | 'first-full' | 'second-full';
+
 interface PanelProps {
-    size: string;
-    url?: string;
-    children: ReactNode;
+  panelType: PanelType;
+  url?: string;
+  children?: React.ReactNode;
 }
 
 const Panel: FunctionComponent<PanelProps> = ({
-    size,
+    panelType,
     url,
     children,
 }) => {
+
+    const panelTypes: Record<PanelType, string> = {
+        'small': 'panel-small',
+        'large': 'panel-large',
+        'first-full': 'panel-full-width-1',
+        'second-full': 'panel-full-width-2',
+    }
+
     return (
-        <div className={`glass panel${size === "small" ? ' panel-small' : size === "large" ? ' panel-large' : ' panel-full-width'}`}>
+        <div className={`glass panel ${panelTypes[panelType] || ''}`}>
             {url && (
                 <Link to={url} className="panel-button">
                     <FaArrowRight />
