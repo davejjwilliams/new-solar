@@ -7,7 +7,7 @@ type PanelType = 'small' | 'large' | 'first-full' | 'second-full';
 interface PanelProps {
   panelType: PanelType;
   url?: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 const Panel: FunctionComponent<PanelProps> = ({
