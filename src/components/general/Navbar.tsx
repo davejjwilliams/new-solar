@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   FaSun,
   FaFlask,
-  FaBookOpen,
   FaFileAlt,
   FaTrophy,
   FaUsers,
@@ -19,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to='/'>
+      <Link to='/' onClick={() => setMenuOpen(false)}>
         <img src='/favicon.png' alt='Logo' className='logo nav-logo' />
       </Link>
       <div className='navbar-container' style={{ position: 'relative' }}>
@@ -31,31 +30,31 @@ const Navbar = () => {
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
         <div className={`nav-links${menuOpen ? ' open' : ''}`}>
-          <Link to='/' className='nav-link'>
+          <Link to='/'  onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaSun className='nav-icon' />
             SOLAR Group
           </Link>
-          <Link to='/research' className='nav-link'>
+          <Link to='/research' onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaFlask className='nav-icon' />
             Research
           </Link>
-          <Link to='/publications' className='nav-link'>
+          <Link to='/publications' onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaFileAlt className='nav-icon' />
             Publications
           </Link>
-          <Link to='/awards' className='nav-link'>
+          <Link to='/awards' onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaTrophy className='nav-icon' />
             Awards
           </Link>
-          <Link to='/members' className='nav-link'>
+          <Link to='/members' onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaUsers className='nav-icon' />
             People
           </Link>
-          <Link to='/funding' className='nav-link'>
+          <Link to='/funding' onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaHandHoldingUsd className='nav-icon' />
             Funding
           </Link>
-          <Link to='/join-us' className='nav-link'>
+          <Link to='/join-us' onClick={() => setMenuOpen(false)} className='nav-link'>
             <FaUserPlus className='nav-icon' />
             Join Us
           </Link>
