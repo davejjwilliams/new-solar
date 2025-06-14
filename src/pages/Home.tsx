@@ -19,6 +19,8 @@ const Home: FunctionComponent<HomeProps> = () => {
   const [publicationCount, setPublicationCount] = useState(1);
   const totalAwards = awards.length;
   const [awardCount, setAwardCount] = useState(1);
+  const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
+  const logoCount = 8;
 
   useEffect(() => {
     if (memberCount < totalMembers) {
@@ -53,11 +55,24 @@ const Home: FunctionComponent<HomeProps> = () => {
     }
   }, [awardCount, totalAwards]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentLogoIndex((prevIndex) => (prevIndex + 1) % logoCount);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
         <img src="assets/logo/s-logo.png" alt="S Logo" style={{ height: '200px', width: 'auto' }} />
-        <img src="assets/logo/solar-logo-5.png" alt="Solar Logo" style={{ height: '200px', width: 'auto' }} className='logo' />
+        <img
+          src={`assets/logo/o-logo-${currentLogoIndex}.png`}
+          alt="Solar Logo"
+          style={{ height: '200px', width: 'auto' }}
+          className='logo'
+        />
         <img src="assets/logo/lar-logo.png" alt="LAR Logo" style={{ height: '200px', width: 'auto' }} />
       </div>
       <div className='page-title'>
