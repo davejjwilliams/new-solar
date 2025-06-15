@@ -65,16 +65,16 @@ const Home: FunctionComponent<HomeProps> = () => {
 
   return (
     <div className='content'>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
-        <img src="assets/logo/s-logo.png" alt="S Logo" style={{ height: '200px', width: 'auto' }} />
+      <div className="home-logos">
+        <img src="assets/logo/s-logo.png" alt="S Logo" className="home-logo"/>
         <img
           src={`assets/logo/o-logo-${currentLogoIndex}.png`}
           alt="Solar Logo"
-          style={{ height: '200px', width: 'auto' }}
-          className='logo'
+          className='logo home-logo'
         />
-        <img src="assets/logo/lar-logo.png" alt="LAR Logo" style={{ height: '200px', width: 'auto' }} />
+        <img src="assets/logo/lar-logo.png" alt="LAR Logo" className="home-logo"/>
       </div>
+
       <div className='page-title'>
         Software Optimisation, Learning and Analytics Research
       </div>
