@@ -15,6 +15,7 @@ nav {
 
 .nav-logo {
   height: 4em;
+  z-index: 1000;
 }
 
 /* Nav Links */

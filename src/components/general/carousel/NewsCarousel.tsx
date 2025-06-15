@@ -52,13 +52,13 @@ const NewsCarousel = () => {
             <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
                     <div className="embla__slide">
-                        <h1>This is slide 1.</h1>
+                        <h1>News Item 1!</h1>
                     </div>
                     <div className="embla__slide">
-                        <h1>This is slide 2.</h1>
+                        <h1>News Item 2!</h1>
                     </div>
                     <div className="embla__slide">
-                        <h1>This is slide 3.</h1>
+                        <h1>News Item 3!</h1>
                     </div>
                 </div>
             </div>
