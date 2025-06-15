@@ -80,7 +80,7 @@ const Home: FunctionComponent<HomeProps> = () => {
       </div>
 
       <div className="panel-grid-custom">
-        <Panel panelType="large" url="/research">
+        <Panel panelType="large" url="/research" icon="arrow">
           <img src="assets/member-images/FedericaSarro.jpeg" alt="Federica Sarro" className='home-portrait' />
           Led by <TextLink url="http://www0.cs.ucl.ac.uk/staff/F.Sarro/" text="Prof. Federica Sarro" /> at
           <br />
@@ -89,13 +89,13 @@ const Home: FunctionComponent<HomeProps> = () => {
           <br />
           Research at the interface of <b>Software Optimisation</b>, <b>Machine/Evolutionary Learning</b> and <b>Analytics</b>.
         </Panel>
-        <Panel panelType="small" url="/members">
+        <Panel panelType="small" url="/members" icon="arrow">
           <FaUsers className='panel-icon' /> <span className='panel-figure'>{memberCount}</span> Members
         </Panel>
-        <Panel panelType="small" url="/publications">
+        <Panel panelType="small" url="/publications" icon="arrow">
           <FaFileAlt className='panel-icon' /> <span className='panel-figure'>{publicationCount}</span> Publications
         </Panel>
-        <Panel panelType="small" url="/awards">
+        <Panel panelType="small" url="/awards" icon="arrow">
           <FaTrophy className='panel-icon' /> <span className='panel-figure'>{awardCount}</span> Awards
         </Panel>
         <Panel panelType="first-full">

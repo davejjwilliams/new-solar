@@ -52,3 +52,25 @@ TEMPLATE: Copy and fill in for new members
   }
 },
 ```
+
+# Adding Research Projects
+
+Research projects are displayed on the research page of the website.
+
+Use the following template to add new projects:
+
+```json
+  {
+    "title": "",
+    "paperName": "",
+    "venue": "",
+    "description": "",
+    "links": [
+      { text: "", url: "" },
+      { text: "", url: "" },
+    ],
+    "authors": [
+      "",
+    ]
+  },
+```
