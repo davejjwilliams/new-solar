@@ -3,7 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: left;
-  border: 1px solid #e1e1e1;
+}
+
+.smaller-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .glass {
@@ -28,10 +33,42 @@
   }
 }
 
+.contact-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-logo img {
+  max-height: 300px;
+  height: auto;
+}
+
+.contact-button {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  background-color: #2d2d2d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+  background-color: #141414;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
 .page-title {
   font-size: 3em;
   font-weight: 400;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 
@@ -95,6 +132,27 @@
   font-weight: 300;
   padding: 1.5rem;
   position: relative;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+
+.panel-title svg {
+  margin-right: 0.25rem;
+}
+
+.panel p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.panel ul {
+  margin: 0;
 }
 
 .panel-large {
@@ -207,9 +265,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   width: 8px;
-  /* Increased from 6px */
   height: 8px;
-  /* Increased from 6px */
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   transition: transform 150ms ease;
@@ -233,17 +289,40 @@
 
 .window-title {
   margin-left: 12px;
-  /* Increased from 8px */
   font-size: 16px;
-  /* Increased from 13px */
   color: #4a4a4a;
   font-weight: 600;
-  /* Increased from 500 */
 }
 
 .window-content {
   padding: 20px;
   background: #ffffff;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .columns-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .column {
+    margin-bottom: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1080px) {
