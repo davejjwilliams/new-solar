@@ -6,7 +6,7 @@ type ResearchProps = object;
 
 const Research: FunctionComponent<ResearchProps> = () => {
   return (
-    <>
+    <div className='content'>
       <div className='page-title'>Research</div>
       <WindowCard title='intro.txt'>
         <p>
@@ -58,7 +58,7 @@ const Research: FunctionComponent<ResearchProps> = () => {
           .
         </p>
       </WindowCard>
-    </>
+    </div>
   );
 };
 

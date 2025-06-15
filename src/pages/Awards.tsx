@@ -19,7 +19,7 @@ const Awards: FunctionComponent<AwardsProps> = () => {
     .sort((a, b) => b - a);
 
   return (
-    <>
+    <div className='smaller-content'>
       <div className='page-title'>Awards</div>
       {sortedYears.map((year) => (
         <CollapsibleSection
@@ -42,7 +42,7 @@ const Awards: FunctionComponent<AwardsProps> = () => {
           ))}
         </CollapsibleSection>
       ))}
-    </>
+    </div>
   );
 };
 

@@ -60,7 +60,7 @@ const Members: FunctionComponent<MembersProps> = () => {
       members: getMemberSubset('distinguished-alumni', true),
     },
   ];
-  // Smooth scroll handler
+
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     id: string
@@ -73,13 +73,13 @@ const Members: FunctionComponent<MembersProps> = () => {
     }
   };
 
-  // Scroll to top handler
+
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <>
+    <div className='content'>
       <div className='page-title'>The SOLAR Team</div>
       <div className='members-layout'>
         <div className='members-menu'>
@@ -128,7 +128,7 @@ const Members: FunctionComponent<MembersProps> = () => {
       >
         <FaArrowUp />
       </button>
-    </>
+    </div>
   );
 };
 

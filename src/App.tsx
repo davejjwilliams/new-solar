@@ -13,17 +13,15 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className='content'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/research' element={<Research />} />
-          <Route path='/publications' element={<Publications />} />
-          <Route path='/awards' element={<Awards />} />
-          <Route path='/members' element={<Members />} />
-          <Route path='/funding' element={<Funding />} />
-          <Route path='/join-us' element={<JoinUs />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/research' element={<Research />} />
+        <Route path='/publications' element={<Publications />} />
+        <Route path='/awards' element={<Awards />} />
+        <Route path='/members' element={<Members />} />
+        <Route path='/funding' element={<Funding />} />
+        <Route path='/join-us' element={<JoinUs />} />
+      </Routes>
     </Router>
   );
 }

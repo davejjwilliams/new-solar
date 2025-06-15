@@ -64,7 +64,7 @@ const Home: FunctionComponent<HomeProps> = () => {
   }, []);
 
   return (
-    <>
+    <div className='content'>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
         <img src="assets/logo/s-logo.png" alt="S Logo" style={{ height: '200px', width: 'auto' }} />
         <img
@@ -115,7 +115,7 @@ const Home: FunctionComponent<HomeProps> = () => {
       <hr className="page-divider" />
 
       <NewsCarousel />
-    </>
+    </div>
   );
 };
 
