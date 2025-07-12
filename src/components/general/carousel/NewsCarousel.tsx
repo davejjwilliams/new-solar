@@ -11,6 +11,7 @@ import {
 } from './CarouselArrowButtons'
 import { IoPlayOutline, IoPauseOutline } from 'react-icons/io5';
 import '../../../styles/Carousel.css'
+import news from '../../../news.json'
 
 const NewsCarousel = () => {
     const progressNode = useRef<HTMLDivElement>(null)
@@ -51,15 +52,16 @@ const NewsCarousel = () => {
 
             <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
-                    <div className="embla__slide">
-                        <h1>News Item 1!</h1>
-                    </div>
-                    <div className="embla__slide">
-                        <h1>News Item 2!</h1>
-                    </div>
-                    <div className="embla__slide">
-                        <h1>News Item 3!</h1>
-                    </div>
+                    {news.map((item) => (
+                        <div key={item.id} className="embla__slide">
+                            <h1>{item.title}</h1>
+                            <div className="news-body">
+                                {item.body.split('\n').map((line, index) => (
+                                    <p key={index}>{line}</p>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </WindowCard>

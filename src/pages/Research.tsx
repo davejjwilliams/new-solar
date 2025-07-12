@@ -11,7 +11,7 @@ const researchTopics = [
     title: "Search-Based Software Engineering",
     description: "Using search-based techniques to solve complex software engineering problems, such as test case generation and software repair.",
     icon: "🔍",
-    members: "Everybody in the group!"
+    members: "Everyone in the group!"
   },
   {
     title: "Software Testing",
@@ -155,9 +155,8 @@ const Research: FunctionComponent<ResearchProps> = () => {
           Facebook and Google, and start-ups.
         </p>
         <p>
-          We promote and embrace open science by sharing whenever possible the{' '}
-          <TextLink url='os.html' text='artefacts' /> accompanying our{' '}
-          <TextLink url='publications.html' text='research papers' /> and our{' '}
+          We promote and embrace open science by sharing whenever possible the artefacts accompanying our{' '}
+          <TextLink url='/publications' text='research papers' /> and {' '}
           <TextLink
             url='https://www.youtube.com/channel/UCZjGXjbG8p581_BleLioBFA'
             text='talks'
@@ -182,7 +181,7 @@ const Research: FunctionComponent<ResearchProps> = () => {
         </div>
       </CollapsibleSection>
 
-      <CollapsibleSection id="research-topics" title="Projects" open={true}>
+      {/* <CollapsibleSection id="research-topics" title="Projects" open={true}>
         <div className="research-grid">
           {researchProjects.map((project) => (
             <Panel url="" icon="expand">
@@ -193,7 +192,7 @@ const Research: FunctionComponent<ResearchProps> = () => {
             </Panel>
           ))}
         </div>
-      </CollapsibleSection>
+      </CollapsibleSection> */}
 
 
     </div>

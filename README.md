@@ -4,7 +4,7 @@ Re-creation of the UCL SOLAR Website using React + TypeScript + Vite
 
 # Adding Publications
 
-Publications are found in the src/publications.json file. Please add your new entries to this list.
+Publications are found in the [`src/publications.json`](src/publications.json) file. Please add your new entries to this list.
 
 TEMPLATE: Copy and fill in for new publications
 
@@ -25,11 +25,11 @@ TEMPLATE: Copy and fill in for new publications
 
 ## 1. Upload Member Image
 
-Before adding a member, you should upload a picture. Member images are found under `/assets/member-images`.
+First, you should upload a picture of the new member. Member images are stored in [`public/assets/member-images/`](public/assets/member-images/).
 
 ## 2. Add new entry to `src/members.json`
 
-Members are found in the `src/members.json` file. Please add/update members in this list.
+Members are found in the [`src/members.json`](src/members.json) file. Please add/update members in this list.
 
 Please be careful to include the `role` carefully from the, as this determines under which category the member is placed.
 
@@ -53,24 +53,16 @@ TEMPLATE: Copy and fill in for new members
 },
 ```
 
-# Adding Research Projects
+# Adding News Updates
 
-Research projects are displayed on the research page of the website.
+News announcements are displayed in the carousel at the bottom of the home page. They include an `id` (any number, as long as it is unique to the other entries in the file), a `title` (the header of the announcement, e.g. "Papers at ICSE 2025") and a `body` (the contents of the announcement, which can include new lines using `\n`).
 
-Use the following template to add new projects:
+Use the following template to add news announcements in [`src/news.json`](src/news.json):
 
 ```json
   {
-    "title": "",
-    "paperName": "",
-    "venue": "",
-    "description": "",
-    "links": [
-      { text: "", url: "" },
-      { text: "", url: "" },
-    ],
-    "authors": [
-      "",
-    ]
+      "id": 1,
+      "title": "",
+      "body": ""
   },
 ```
