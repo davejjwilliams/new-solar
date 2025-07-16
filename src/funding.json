@@ -1,0 +1,37 @@
+[
+    {
+        "logoFilename": "erc.png",
+        "title": "EPIC: Evolving Program Improvement Collaborator",
+        "description": "European ERC Advanced Grant no. 741278, (value: €2,159,035.00).",
+        "longDescription": "EPIC will automatically construct Evolutionary Program Improvement Collaborators (called Epi-Collaborators) that suggest code changes that improve software according to multiple functional and non-functional objectives. The Epi-Collaborator suggestions will include transplantation of code from a donor system to a host, grafting of entirely new features grown (evolved) by the Epi-Collaborator, and identification and optimisation of tuneable deep parameters (that were previously unexposed and therefore unexploited). A key feature of the EPIC approach is that all of these suggestions will be underpinned by automatically-constructed quantitative evidence that justifies, explains and documents improvements. EPIC aims to introduce a new way of developing software, as a collaboration between human and machine, exploiting the complementary strengths of each; the human has domain and contextual insights, while the machine has the ability to intelligently search large search spaces. The EPIC approach directly tackles the emergent challenges of multiplicity: optimising for multiple competing and conflicting objectives and platforms with multiple software versions.",
+        "members": "M. Harman, F. Sarro, J. Zhang, G. Guizzo, M. Kechagia, D. Asprone, M. Hort R. Moussa, V. Tawosi"
+    },
+    {
+        "logoFilename": "epsrc.png",
+        "title": "Automated Software Specialisation Using Genetic Improvement",
+        "description": "EPSRC Fellowship, no. EP/P023991/1 (value: £891,505)",
+        "longDescription": "",
+        "members": ""
+    },
+    {
+        "logoFilename": "newton-fund-and-rae.png",
+        "title": "Automated Software Engineering for Thailand's Software Industry",
+        "description": "Newton Fund (Industry Academia Partnership Programme - 18/19), Royal Academy of Engineering, UK (value: £54,062.72)",
+        "longDescription": "",
+        "members": ""
+    },
+    {
+        "logoFilename": "hpi-and-aws.png",
+        "title": "Distributed Computation of Pareto Front for Multi-objective Evolutionary Algorithms",
+        "description": "HPI Future SOC Lab & AWS Amazon Research Grant",
+        "longDescription": "",
+        "members": ""
+    },
+    {
+        "logoFilename": "cost.png",
+        "title": "Improving Applicability of Nature‐Inspired Optimisation by Joining Theory and Practice",
+        "description": "European Cooperation in Science and Technology, COST Action CA15140",
+        "longDescription": "",
+        "members": ""
+    }
+]

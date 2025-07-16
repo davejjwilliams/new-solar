@@ -354,6 +354,20 @@
   line-height: 1.5;
 }
 
+.funding-logo {
+  max-height: 120px;
+  max-width: 100%;
+}
+
+.funding-title {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.funding-subtitle {
+  font-size: 0.8em
+}
+
 @media (max-width: 768px) {
   .home-logo {
     max-height: 80px;
