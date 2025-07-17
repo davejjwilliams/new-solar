@@ -180,6 +180,18 @@
     }
   },
   {
+    "name": "Yongcheng Huang",
+    "title": "Mr",
+    "role": "visitor",
+    "subtitle": "LLM for code refactoring",
+    "imgUrl": "Yongcheng.jpg",
+    "links": {
+      "personal": "https://huangs-website.webflow.io/",
+      "scholar": "https://scholar.google.com/citations?hl=en&user=C4xHgUMAAAAJ",
+      "linkedin": "https://www.linkedin.com/in/huang-yongcheng-26b14a263/"
+    }
+  },
+  {
     "name": "Aymeric Blot",
     "title": "Dr",
     "role": "former-member",
