@@ -89,12 +89,6 @@
   font-style: italic;
 }
 
-.card-author {
-  color: #666;
-  font-size: 0.9em;
-  margin-bottom: 8px;
-}
-
 @media (max-width: 800px) {
   .mobile-only {
     display: block;
