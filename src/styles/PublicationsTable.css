@@ -1,3 +1,10 @@
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: table;
+}
+
 .filterable-table-container {
   width: 100%;
   box-sizing: border-box;
@@ -82,13 +89,54 @@
   font-style: italic;
 }
 
+.card-author {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
 @media (max-width: 800px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+
+  .publication-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-author {
+    color: #555;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-venue {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+
+  .pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
   .filterable-table-container {
     padding: 0.5rem;
-  }
-  .filterable-table th,
-  .filterable-table td {
-    padding: 0.5rem;
-    font-size: 0.95rem;
   }
 }

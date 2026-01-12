@@ -27,7 +27,7 @@ const Panel: FunctionComponent<PanelProps> = ({
     }
 
     return (
-        <div className={`glass panel ${panelType && panelTypes[panelType]}`}>
+        <div className={`thin-glass panel ${panelType && panelTypes[panelType]}`}>
             {url && (
                 <Link to={url} className="panel-button">
                     {icon && (icon === 'arrow' ? <FaArrowRight /> : <FaExpand />)}

@@ -22,7 +22,7 @@ const AwardCard: FunctionComponent<AwardCardProps> = ({
   awardUrl,
 }) => {
   return (
-    <div className='award-card glass'>
+    <div className='award-card thin-glass'>
       <div className='award-card-name'>{awardName}</div>
       <div className='award-card-meta'>
         <span className='award-card-type'>{type}</span> &middot;{' '}

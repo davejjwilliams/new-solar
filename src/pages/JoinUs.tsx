@@ -16,7 +16,7 @@ const JoinUs: FunctionComponent<JoinUsProps> = () => {
                 </div>
 
 
-                <div className="panel glass">
+                <div className="panel thin-glass">
                     <div className="centred">
                         We are looking for passionate and talented people to join our team at SOLAR!
                     </div>
@@ -24,7 +24,7 @@ const JoinUs: FunctionComponent<JoinUsProps> = () => {
 
                 <div className="columns-container">
                     <div className="column">
-                        <div className="panel glass">
+                        <div className="panel thin-glass">
                             <div className="panel-title"><FaLightbulb /> Open Positions:</div>
                             <ul>
                                 <li>Visiting Scholars (all levels)</li>
@@ -36,7 +36,7 @@ const JoinUs: FunctionComponent<JoinUsProps> = () => {
                         <a href="mailto:f.sarro@ucl.ac.uk" className="contact-button">Contact Us</a>
                     </div>
                     <div className="column">
-                        <div className="panel glass">
+                        <div className="panel thin-glass">
                             <div className="panel-title"><FaLocationArrow /> Location:</div>
                             <p>University College London (UCL)</p>
 

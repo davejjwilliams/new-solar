@@ -51,7 +51,9 @@ const PublicationsTable: FunctionComponent<PublicationsTableProps> = () => {
           Clear Search
         </button>
       </div>
-      <table className='filterable-table'>
+
+      {/* Desktop View */}
+      <table className='filterable-table desktop-only'>
         <thead>
           <tr>
             <th className='col-author'>Author(s)</th>
@@ -88,6 +90,27 @@ const PublicationsTable: FunctionComponent<PublicationsTableProps> = () => {
           )}
         </tbody>
       </table>
+
+      {/* Mobile View */}
+      <div className='mobile-cards mobile-only'>
+        {filteredData.map((pub, rowIndex) => (
+          <div key={rowIndex} className='publication-card thick-glass'>
+            <div className='card-title'>{pub.title}</div>
+            <div className='card-author'>{pub.author}</div>
+            <div className='card-venue'>{pub.venue}</div>
+            <div className='pub-links'>
+              {pub.links.map((link, idx) => (
+                <span key={idx}>
+                  [<TextLink url={link.url} text={link.text} />]
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+        {filteredData.length === 0 && (
+          <div className='no-results'>No results found.</div>
+        )}
+      </div>
     </div>
   );
 };

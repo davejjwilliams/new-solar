@@ -12,8 +12,14 @@
   text-align: left;
 }
 
-.glass {
+.thin-glass {
   background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(160px);
+  -webkit-backdrop-filter: blur(160px);
+}
+
+.thick-glass {
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(160px);
   -webkit-backdrop-filter: blur(160px);
 }
