@@ -81,12 +81,10 @@ const Home: FunctionComponent<HomeProps> = () => {
 
       <div className="panel-grid-custom">
         <Panel panelType="large" url="/research" icon="arrow">
-          <img src="assets/member-images/FedericaSarro.jpeg" alt="Federica Sarro" className='home-portrait' />
-          Led by <TextLink url="http://www0.cs.ucl.ac.uk/staff/F.Sarro/" text="Prof. Federica Sarro" /> at
-          <br />
-          <TextLink url="https://www.ucl.ac.uk/" text="University College London (UCL)" />
-          <br />
-          <br />
+          <div className="panel-large-intro">
+            <img src="assets/member-images/FedericaSarro.jpeg" alt="Federica Sarro" className='home-portrait' />
+            Led by <TextLink url="http://www0.cs.ucl.ac.uk/staff/F.Sarro/" text="Prof. Federica Sarro" /> at <TextLink url="https://www.ucl.ac.uk/" text="University College London (UCL)" />
+          </div>
           Research at the interface of <b>Software Optimisation</b>, <b>Machine/Evolutionary Learning</b> and <b>Analytics</b>.
         </Panel>
         <Panel panelType="small" url="/members" icon="arrow">
